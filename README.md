@@ -11,7 +11,7 @@ This is one of the early projects in the course. The purpose of sharing it is to
 
 ## Screenshots
 
-![HomePage](screenshot/homepage.jpeg)
+![HomePage](Screenshot/homepage.jpeg)
 
 ## License
 ** For educational purposes only **
