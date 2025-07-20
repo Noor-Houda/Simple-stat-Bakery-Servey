@@ -1,0 +1,122 @@
+body {
+  background-image: url("../Images/confetti.jpg");
+}
+h1 {
+  font-family: "Garamond";
+  color: #204b57;
+}
+legend {
+  font-size: large;
+  font-weight: bolder;
+}
+label {
+  font-size: large;
+}
+.collec {
+  background-color: white;
+  padding: 20px;
+  margin-left: 245px;
+  margin-top: 90px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+  border: solid 3px lavender;
+  width: 60%;
+  height: 50%;
+  position: center;
+}
+fieldset {
+  color: #204b57;
+  border-radius: 30px;
+  border-color: #aabdcc;
+  padding: 15px;
+  float: center;
+  align-self: center;
+  margin-bottom: 10px;
+}
+input {
+  border-radius: 10px;
+  border-color: darkgray;
+  background-color: #aabdcc;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+.container input {
+  padding: 5px;
+}
+.img {
+  position: absolute;
+  top: 30px;
+  left: 1040px;
+  opacity: 1;
+}
+.img:nth-of-type(1) {
+  animation: fade1 20s linear infinite;
+}
+.img:nth-of-type(2) {
+  animation: fade2 20s linear infinite;
+}
+.img:nth-of-type(3) {
+  animation: fade3 20s linear infinite;
+}
+@keyframes fade1 {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fade2 {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fade3 {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+#im{
+    padding: 5px;
+}
+select{
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+}

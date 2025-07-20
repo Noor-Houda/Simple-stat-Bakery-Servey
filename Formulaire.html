@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="CSS/Style.css" />
+    <title>Formulaire</title>
+  </head>
+  <body>
+    <img
+      src="Images/frappe.png"
+      alt=""
+      width="200px"
+      class="img"
+      id="image3"
+    />
+    <img src="Images/sushi.png" alt="cake" width="200px" class="img" id="image2" />
+    <img src="Images/cookies.png" alt="cookie" width="200px" class="img" id="image1" />
+
+    <div class="collec">
+      <h1>Sondage de préférences</h1>
+      <form action="destination.php" method="post">
+        <fieldset>
+          <legend>Vos coordonnées</legend>
+          <div class="container">
+            <label for="nom">Nom* :</label
+            ><input type="text" name="nom" id="nom" required />
+            <label for="pre">Prénom* :</label
+            ><input type="text" name="pre" id="pre" required />
+            <label for="dat">Date de Naissance : </label
+            ><input type="date" name="dat" id="dat" />
+            <label for="mail">Mail : </label
+            ><input
+              type="email"
+              name="mail"
+              id="mail"
+              pattern="[A-Za-Z0-9_]+@[a-z0-9.\-]{2}+.[a-z]{2}"
+            />
+            <label for="site">Votre Site : </label
+            ><input type="url" name="site" id="site" />
+            <label for="pass">Code :</label
+            ><input
+              type="password"
+              name="pass"
+              id="pass"
+              size="40"
+              minlength="8"
+              pattern="{2}[0-9]{4}[a-z]{2}"
+              title=" Ce code est de  longueur minimale 8; doit commencer par 2 lettres majuscules suivis de 4 chiffres pour en finir par deux lettres minuscules"
+            />
+          </div><br>
+          <input type="radio" name="sexe" id="h" /><label for="h">Homme</label
+          ><br />
+          <input type="radio" name="sexe" id="f" /><label for="f">Femme</label
+          ><br /><br />
+          <select name="pays" id="pays">
+            <optgroup label="Afrique de Nord">
+              <option value="tn">Tunisie</option>
+              <option value="ag">Algérie</option>
+              <option value="ma">Marroc</option>
+            </optgroup>
+            <optgroup label="Europe">
+              <option value="fr">France</option>
+              <option value="bl">Belgique</option>
+              <option value="it">Italy</option>
+              <option value="Al">Allemagne</option>
+            </optgroup>
+            <optgroup label="Amérique">
+              <option value="">USA</option>
+              <option value="">Canada</option>
+              <option value="">Argentine</option>
+              <option value="">Mexique</option>
+            </optgroup>
+            <optgroup label="Autre">
+              <option value="">Afrique de sud</option>
+              <option value="">Asie</option>
+              <option value="">Océaine</option>
+              <option value="">Australie</option>
+            </optgroup>
+          </select>
+        </fieldset>
+        <fieldset>
+          <legend>Vos gouts</legend>
+          <input type="checkbox" name="po" id="po" /><label for="po"
+            >Pommes</label
+          ><br />
+          <input type="checkbox" name="pi" id="pi" /><label for="pi"
+            >Poires</label
+          ><br />
+          <input type="checkbox" name="sw" id="sw" /><label for="sw"
+            >Scoubidous</label
+          ><br />
+          <textarea name="gout" id="gout" rows="5" cols="50"></textarea>
+        </fieldset>
+        <fieldset>
+          <legend>Envoyer nous votre photo</legend>
+          <input type="file" name="im" id="im" accept=".jpg,.jpeg,.png,.svg" />
+          <input
+            type="button"
+            value="Supprimer image"
+            onclick="document.getElementById('im').value = '' "
+          /><br /><br />
+          <input type="reset" value="Effacer" />
+          <input type="submit" value="Envoyer" />
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
